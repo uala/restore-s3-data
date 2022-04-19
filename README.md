@@ -18,5 +18,5 @@ Example:
 docker run -v $(PWD)/.data:/tmp --env-file=.env leen15/restore-s3-data
 
 # Download and extract backup:
-docker run -v $(PWD)/.data:/tmp --env-file=.env leen15/restore-s3-data sh -c "/opt/restore.sh; tar -xzvf $LOCAL_DIR/backup -C $LOCAL_DIR' || return 1; echo 'extract completed, proceed ...';"
+docker run -v $(PWD)/.data:/tmp --env-file=.env leen15/restore-s3-data sh -c "/opt/restore.sh; cd /tmp; tar -xzvf backup || return 1; echo 'extract completed, proceed ...';"
 ```
