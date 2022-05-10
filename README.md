@@ -2,7 +2,7 @@
 
 Small image based on `leen15/aws-cli` used to restore a backup from a specific bucket.
 It searches for the last backup in a path and download it in a specific local folder.
-The local folder has to be mounted if you want to use the
+The local folder has to be mounted if you want to use the extracted data in a volume.
 
 Mandatory environment variables:
 
